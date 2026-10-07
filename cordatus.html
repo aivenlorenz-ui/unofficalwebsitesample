@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cordatus Advisors | Corporate Development Advisory</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff;--alt:#f3f5f8;--ink:#0f2238;--mute:#566579;--line:#dde3ea;--navy:#0b5ea6;--blue:#1e8fea;--sky:#8dc3f4;--teal:#2bd9c3;--mint:#8de5d9;--ring:#666;--hero:#0a1c30;--heroink:#f4f8fc;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1624;--alt:#101f33;--ink:#eaf1f8;--mute:#9db0c4;--line:#22344a;--ring:#9aa4af;--hero:#07121f}}
+:root[data-theme="dark"]{--bg:#0b1624;--alt:#101f33;--ink:#eaf1f8;--mute:#9db0c4;--line:#22344a;--ring:#9aa4af;--hero:#07121f}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 70px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+h1,h2,h3{font-family:Fraunces,Georgia,"Times New Roman",serif;font-weight:500;line-height:1.15;margin:0}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-family:Fraunces,Georgia,serif;font-size:21px;letter-spacing:.2px}
+.brand small{display:block;font:500 10px/1 Inter,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--mute);margin-top:3px}
+nav a{margin-left:28px;text-decoration:none;font-size:14px;color:var(--mute);font-weight:500}
+nav a:hover{color:var(--navy)}
+.hero{background:var(--hero);color:var(--heroink);position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;padding-top:96px;padding-bottom:96px}
+.eyebrow{font:600 12px/1 Inter,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--teal);margin-bottom:22px}
+.hero h1{font-size:clamp(36px,5.2vw,60px);letter-spacing:-.01em}
+.hero h1 em{font-style:italic;color:var(--mint)}
+.hero p{font-size:18px;color:#c3d3e3;max-width:520px;margin:24px 0 34px}
+.btn{display:inline-block;padding:14px 26px;border-radius:999px;background:var(--teal);color:#06202a;font-weight:600;font-size:15px;text-decoration:none}
+.btn.o{background:none;border:1px solid #4a6482;color:var(--heroink);margin-left:10px}
+.mark{width:100%;max-width:400px;justify-self:center}
+section{padding:96px 0}
+section.alt{background:var(--alt)}
+.lab{font:600 12px/1 Inter,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--navy);margin-bottom:16px}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .lab{color:var(--sky)}}
+h2{font-size:clamp(28px,3.6vw,42px);max-width:720px}
+.lead{color:var(--mute);font-size:18px;max-width:680px;margin-top:20px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:56px;margin-top:48px}
+.pillar{border-top:3px solid var(--blue);padding-top:18px}
+.pillar:nth-child(2){border-color:var(--teal)}
+.pillar h3{font-size:22px;margin-bottom:10px}
+.pillar p{color:var(--mute);margin:0}
+.svc{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;margin-top:52px}
+.card{background:var(--bg);border:1px solid var(--line);border-radius:16px;padding:26px 22px;position:relative;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(11,40,70,.12)}
+.dot{width:38px;height:38px;border-radius:50%;margin-bottom:20px;display:flex;align-items:center;justify-content:center;font:600 13px Inter,sans-serif;color:#fff}
+.card h3{font-size:20px;margin-bottom:8px}
+.card p{font-size:14.5px;color:var(--mute);margin:0}
+.models{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+.model{padding:30px;border-radius:16px;background:var(--alt);border:1px solid var(--line)}
+section.alt .model{background:var(--bg)}
+.model h3{font-size:21px;margin-bottom:10px}
+.model p{margin:0;color:var(--mute);font-size:15px}
+.steps{display:flex;margin-top:48px;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--bg)}
+.step{flex:1;padding:24px 20px;border-left:1px solid var(--line)}
+.step:first-child{border-left:0}
+.step b{display:block;font:600 11px Inter,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--mute);margin-bottom:8px}
+.step span{font-family:Fraunces,Georgia,serif;font-size:19px}
+.lead-box{display:grid;grid-template-columns:auto 1fr;gap:40px;align-items:center;margin-top:44px;padding:40px;border-radius:20px;background:var(--hero);color:var(--heroink)}
+.avatar{width:104px;height:104px;border-radius:50%;background:linear-gradient(135deg,var(--navy),var(--teal));display:flex;align-items:center;justify-content:center;font:500 36px Fraunces,Georgia,serif;color:#fff}
+.lead-box h3{font-size:26px}
+.lead-box .role{color:var(--teal);font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;margin:6px 0 14px}
+.lead-box p{margin:0;color:#c3d3e3;max-width:640px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.tags i{font-style:normal;font-size:12.5px;padding:6px 12px;border-radius:999px;border:1px solid #38526f;color:#dbe7f3}
+.contact{text-align:center}
+.contact h2{margin:0 auto}
+.contact .lead{margin-left:auto;margin-right:auto}
+.loc{margin-top:28px;font-family:Fraunces,Georgia,serif;font-size:22px}
+footer{border-top:1px solid var(--line);padding:30px 0;color:var(--mute);font-size:13.5px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+@media (max-width:960px){.svc{grid-template-columns:1fr 1fr}.models{grid-template-columns:1fr}.steps{flex-direction:column}.step{border-left:0;border-top:1px solid var(--line)}.step:first-child{border-top:0}}
+@media (max-width:760px){.hero .wrap{grid-template-columns:1fr;padding-top:64px;padding-bottom:64px}.mark{max-width:240px;order:-1;justify-self:start}.two,.lead-box{grid-template-columns:1fr}.svc{grid-template-columns:1fr}nav a{margin-left:16px}nav a.h{display:none}section{padding:68px 0}.btn.o{margin:12px 0 0}.lead-box{padding:28px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#top" id="top" aria-label="Cordatus Advisors home">
+<svg width="40" height="40" viewBox="0 0 200 200" aria-hidden="true"><use href="#logo"/></svg>
+<span>Cordatus<small>Advisors</small></span></a>
+<nav><a class="h" href="#approach">Approach</a><a href="#services">Services</a><a class="h" href="#models">Engagement</a><a class="h" href="#leadership">Leadership</a><a href="#contact">Contact</a></nav>
+</div></header>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<g id="logo"><circle cx="100" cy="106" r="40" fill="none" stroke="var(--ring)" stroke-width="22"/>
+<circle cx="100" cy="30" r="20" fill="#8de5d9"/><circle cx="172" cy="82" r="20" fill="#2bd9c3"/><circle cx="144" cy="167" r="20" fill="#8dc3f4"/><circle cx="56" cy="167" r="20" fill="#1e8fea"/><circle cx="28" cy="82" r="20" fill="#0b5ea6"/></g></defs></svg>
+
+<section class="hero" style="padding:0"><div class="wrap">
+<div>
+<div class="eyebrow">Corporate Development · Buy-Side M&amp;A</div>
+<h1>Corporate development as a <em>strategic capability.</em></h1>
+<p>Cordatus Advisors brings proven corporate development leadership to companies that treat M&amp;A as a core discipline: from strategy and readiness through diligence, execution and integration.</p>
+<a class="btn" href="#services">Our services</a><a class="btn o" href="#contact">Get in touch</a>
+</div>
+<svg class="mark" viewBox="0 0 200 200" role="img" aria-label="Cordatus logo"><use href="#logo"/></svg>
+</div></section>
+
+<section id="approach"><div class="wrap">
+<div class="lab">Our approach</div>
+<h2>Buy-side expertise, built from inside the corporate development seat.</h2>
+<p class="lead">Cordatus Advisors LLC provides corporate development advisory services for companies that want best-in-class, proven leadership, capabilities and approaches behind their acquisition programs.</p>
+<div class="two">
+<div class="pillar"><h3>A capability, not a one-off deal</h3><p>Acquirers that win treat corporate development as a repeatable strategic function. We help clients build, run and sharpen that function so each transaction compounds on the last.</p></div>
+<div class="pillar"><h3>Focused on the buy side</h3><p>Every engagement is oriented around the acquirer: its strategy, its readiness, its diligence standards and its ability to capture value after closing.</p></div>
+</div></div></section>
+
+<section class="alt" id="services"><div class="wrap">
+<div class="lab">Services</div>
+<h2>Five disciplines across the full acquisition lifecycle.</h2>
+<p class="lead">Engage us for a single stage or for the entire arc, from the first strategic question to integrated performance.</p>
+<div class="svc">
+<div class="card"><div class="dot" style="background:#0b5ea6">1</div><h3>Strategy</h3><p>Define where M&amp;A fits in the growth agenda, which themes and targets matter, and what success looks like.</p></div>
+<div class="card"><div class="dot" style="background:#1e8fea">2</div><h3>Readiness Planning</h3><p>Prepare the organization, process and governance to originate, evaluate and absorb acquisitions.</p></div>
+<div class="card"><div class="dot" style="background:#4aa3ee">3</div><h3>Diligence</h3><p>Structured evaluation of targets across commercial, financial and operational dimensions.</p></div>
+<div class="card"><div class="dot" style="background:#18bfa9">4</div><h3>Deal Execution</h3><p>Disciplined support through valuation, negotiation, structuring and closing.</p></div>
+<div class="card"><div class="dot" style="background:#0fa593">5</div><h3>Integration</h3><p>Post-close planning and tracking so the deal thesis becomes realized performance.</p></div>
+</div></div></section>
+
+<section id="models"><div class="wrap">
+<div class="lab">How we engage</div>
+<h2>Flexible support that fits the way your team works.</h2>
+<div class="models">
+<div class="model"><h3>Outsourced function</h3><p>Cordatus serves as your corporate development arm, running the process from sourcing through integration.</p></div>
+<div class="model"><h3>Bench strength</h3><p>We augment an existing corporate development team with senior experience during busy or complex periods.</p></div>
+<div class="model"><h3>Targeted project</h3><p>Focused help on a single stage, such as readiness planning, a diligence workstream or an integration plan.</p></div>
+</div>
+<div class="steps" aria-label="Lifecycle">
+<div class="step"><b>01</b><span>Strategy</span></div><div class="step"><b>02</b><span>Readiness</span></div><div class="step"><b>03</b><span>Diligence</span></div><div class="step"><b>04</b><span>Execution</span></div><div class="step"><b>05</b><span>Integration</span></div>
+</div></div></section>
+
+<section class="alt" id="leadership"><div class="wrap">
+<div class="lab">Leadership</div>
+<h2>Led by an operator who has run the function.</h2>
+<div class="lead-box">
+<div class="avatar" aria-hidden="true">JR</div>
+<div><h3>John Raveret</h3><div class="role">Founder &amp; Managing Director</div>
+<p>More than two decades of corporate development experience with a strong focus on M&amp;A. Previously Global Head of Corporate Development at Cognizant, with responsibility for strategy, sourcing, diligence, negotiations, integration and post-closing performance monitoring. Earlier roles at Dun &amp; Bradstreet, IMS Health and Nielsen.</p>
+<div class="tags"><i>Global corporate development</i><i>Cross-border M&amp;A</i><i>Life sciences</i><i>Banking</i><i>Healthcare</i><i>Communications</i></div></div>
+</div></div></section>
+
+<section class="contact" id="contact"><div class="wrap">
+<div class="lab">Contact</div>
+<h2>Let's talk about your acquisition agenda.</h2>
+<p class="lead">Whether you are building a corporate development function or preparing for a specific transaction, we would welcome the conversation.</p>
+<div class="loc">Boston, Massachusetts</div>
+</div></section>
+
+<footer><div class="wrap"><span>© Cordatus Advisors LLC</span><span>Corporate Development (Buyside M&amp;A) Advisory Services</span></div></footer>
+</body>
+</html>
